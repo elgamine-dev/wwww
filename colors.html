@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>The web site of pointless</title>
+    <style type="text/css">
+      /* This is a CSS comment. CSS is how you can add style to your website, such as colors, fonts,
+         and positioning of your HTML content.
+         See http:// for more info. */
+      html,body,aside {
+        height:100%; 
+      }
+      body {
+        background-color: black;
+        color: white;
+        font-family: Verdana;
+        padding:0;
+        margin:0;
+      }
+      .story {
+        height:90px;
+        width:100%;
+        position:fixed;
+        bottom:0;
+        overflow-y:auto;
+        border-top:1px #000 solid;
+        background-color:#444;
+      }
+      .story div {
+        width:80px;
+        height:100%;
+        display:inline-block;
+      }
+      
+      .story div span {
+        display:block;
+        height:50%;
+        
+      }
+      #content {
+        font-size:10rem;
+        text-align: center;
+        margin-left:250px;
+      }
+      input, button {
+        width:100%;
+      }
+      aside {
+        width:250px;
+        padding:12px;
+        background-color:#444;
+        color:#eee;
+        position:fixed;
+        left:0;
+        top:0;
+      }
+      #menu {
+        display:none;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="menu">M</button>
+    <aside>
+      <div class="meta">
+        Bg : <span class="color">#000</span><br>
+        Color : <span class="background">#fff</span>
+      </div>
+      <div class="colorpicker">
+        <form id="setcolor">
+          <input id="colorsetter" type="color">
+          <input type="submit" value="Set Color">
+        </form>
+      </div>
+      <div>
+        <button class="rand">foufou!</button>
+      </div>
+    </aside>
+    <div id="content">COLOR !</div>
+    <footer  class="story"></footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Colors.js/1.2.3/colors.min.js"></script>
+    <script>
+      var corps = $('body');
+      var meta = {c: $('.color'), bg: $('.background')};
+      
+      $('#setcolor').on('submit', function(e){
+        e.preventDefault();
+        var col = $("#colorsetter").val();
+        colcol(col)
+      });
+      
+      $('.rand').on('click', function(e){
+        colcol($c.rand())
+      });
+      
+      $('.story').on('click', 'div', function(){
+        var bg  = $(this).find('[bg]').attr('bg')
+        restore(bg)
+      });
+      
+      function colcol(col, isStory){
+        isStory = isStory || false;
+        var complement = $c.complement(col);
+        
+        meta.c.html(complement);
+        meta.bg.html(col);
+        
+        corps.css('color',complement);
+        corps.css('background-color',col);
+        
+        if (!isStory) {
+          story(complement, col);
+        }
+        
+      }
+      
+      function story(col, bg) {
+        var tpl = '<div><span col="'+col+'" style="background:'+col+'"></span><span bg="'+bg+'" style="background:'+bg+'"></span></div>';
+        var $story = $('.story');
+        $story.append(tpl);
+      }
+      
+      function restore(bg){
+         colcol(bg, true)
+      }
+    </script>
+  </body>
+</html>

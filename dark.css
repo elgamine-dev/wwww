@@ -1,0 +1,113 @@
+body {
+  background-color: #252525;
+  color:#868686;
+  font-family: Ubuntu;
+  padding: 15px;
+}
+* {
+  box-sizing: border-box;
+}
+#container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.menu-top, .basic {
+  background-color: #252525;
+  background: linear-gradient(#252525, #161616);
+}
+.menu-top, .card, .basic {
+  border: 1px solid #202020;
+  box-shadow:0 2px 0px 0px #4A4A4A, 0 -2px 4px 0 #1B1B1B;
+}
+menu {
+  padding: 0;
+  margin: 0;
+
+}
+
+.logo, .links, .links li {
+  display:inline-block;
+  text-shadow:0 1px 0 #666;
+}
+
+.logo {
+  margin-right: 45px;
+  margin-left: 45px;
+  font-size: 120%;
+  font-weight: 700;
+}
+
+.links li {
+  font-family: 'Ubuntu Condensed';
+  padding-left: 15px;
+  padding-right: 15px;
+}
+aside h3 {
+  margin-bottom: 0;
+  font-family: 'Ubuntu Condensed';
+}
+aside h3+ul {
+  margin-top: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+aside {
+  padding-left: 15px;
+  width: 300px;
+  float:right;
+  margin-top: 15px;
+}
+
+#main {
+padding-top: 15px;
+padding-right: 15px;
+margin-right: 300px;
+box-sizing: border-box;
+}
+
+#main .card {
+  background-color: #161616;
+  padding:15px;
+  box-sizing: border-box;
+  
+}
+.card h3, .card h2, .card h1, .card h4 {
+  color:#B5B5B5;
+  text-shadow:0 1px 0 #808080;
+  font-family: 'Ubuntu Condensed';
+}
+.card p {
+  color:#BBBBBB;
+}
+
+.card + .card {
+  margin-top:1rem;
+}
+.card .card--thumb{
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.card .card--thumb img{
+  width: 100%;
+}
+.card header, .card footer {
+  background-color: #202020;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding:7px 15px;
+}
+.card header {
+  margin-top: -15px;
+  box-shadow: inset 0 -3px 6px 0 #1D1D1D;
+}
+
+.card footer {
+  margin-bottom: -15px;
+  box-shadow: inset 0 3px 6px 0 #1D1D1D;
+}
+
+.card a, .card a:link {
+  color:#aaa;
+  text-decoration: none;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>The pointless web site</title>
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+      /* This is a CSS comment. CSS is how you can add style to your website, such as colors, fonts,
+         and positioning of your HTML content.
+         See http:// for more info. */
+
+      body {
+        text-align: center;
+        font-family:'Raleway';
+        font-size:2em;
+        color:#fff;
+        background: linear-gradient(270deg, #223933, #28463e, #373114, #602f47);
+background-size: 800% 800%;
+
+-webkit-animation: AnimationName 30s ease infinite;
+-z-animation: AnimationName 30s ease infinite;
+-o-animation: AnimationName 30s ease infinite;
+animation: AnimationName 30s ease infinite;
+
+      }
+      .point {
+        font-size:250%;
+        font-family:Verdana;
+        margin:0;
+      }
+      .tiny {
+        font-size:.6em;
+      }
+      .links {
+          list-style:none;
+
+          margin: 0 auto;
+      }
+      .links li {
+        height:88px;
+        width: 250px;
+        display:inline-block;
+      }
+      .links li a, .links li button {
+        background-color : #222;
+        display:block;
+        color:#888;
+
+        text-decoration: none;
+        margin-bottom:15px;
+        padding:15px 0;
+        position:relative;
+        border-bottom:6px #444 solid;
+        transition: all ease 600ms;
+ 
+      }
+      .links li a:hover {
+        color:#aaa;
+        transform:translate3d(0,6px,0);
+        border-bottom:0px #333 solid;
+        transition: all ease 300ms;
+      }
+      .cat {
+        background : url(cat.png);
+        width:100px;
+        height:84px;
+        margin: 10px auto;
+        
+        
+      }
+      .cat:hover {
+        background: #000;
+        color:red;
+      }
+      .label {
+        opacity:0;
+        line-height:84px;
+      }
+      .cat:hover .label {
+        opacity:1;
+      }
+      /*
+      http://www.gradient-animator.com/
+      */
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+aside {
+  width : 300px;
+  position: fixed;
+right: 0;
+top: 0;
+padding-right:25px;
+padding-top:25px;
+}
+html, body {
+  height:100%;
+  overflow:hidden;
+}
+iframe {
+  width:100%;
+  padding-right:300px;
+  box-sizing: border-box;
+  border:0;
+  height:100%;
+}
+    </style>
+  </head>
+  <body>
+  
+    <iframe src="home.html"></iframe>
+      
+     <aside>
+        <ul class="links">
+          <li><a href="fonts.html">fonts</a></li>
+          <li><a href="ikra.html">Ikra</a></li>
+          <li><a href="letters.html">letters</a></li>
+          <li><a href="gradfun.html">GradFun</a></li>
+          <li><a href="palette.html">Green palette</a></li>
+          <li><a href="colors.html">Colors</a></li>
+          <li><a href="tube.html">Tube</a></li>
+          <li><a href="darktpl.html">Dark Tpl</a></li>
+          <li><a href="home.html">البيت</a></li>
+       </ul>
+     </aside>
+     
+     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     <script>
+       $(document).ready(function(){
+        $('aside').on('click', 'a', function(e){
+          e.preventDefault();
+          $('iframe').attr('src', $(this).attr('href'));
+        });
+        
+        $('')
+        
+       });
+     </script>
+     
+  </body>
+</html>
+    

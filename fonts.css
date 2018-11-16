@@ -1,0 +1,165 @@
+* {
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+html, body{
+  height:100%;
+}
+.pan {
+  min-height:100% !important;
+}
+
+h1 {font-size:60px;}
+h2 {font-size:50px;}
+h3 {font-size:40px;}
+
+.big h1 {font-size: 90px;}
+.big h2 {font-size: 80px;}
+.big h3 {font-size: 70px;}
+
+.inner {
+	width: 1000px;
+	margin:0 auto;
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+.start {
+	background-color: #36372F;
+	color:#E1E2DE;
+	padding:3em 0 7em;;
+}
+
+.start h1 {
+	font-family: Pacifico;
+	font-size: 7em;
+	color: #C7C77F;
+	text-shadow: 3px 3px 0 #fff;;
+
+}
+
+.start .subheader {
+	font-family: Lato;
+	position: relative;
+	top: -30px;
+	padding-left: 0.5em;
+	color: #76776E;
+}
+
+
+.foot {
+	background-color: #fff;
+	color: #333;
+	
+	
+	height:100%;
+	box-sizing:border-box;
+}
+
+
+.foot dt{
+	font-family: Quicksand;
+	font-size: 2.3em;
+	text-shadow: 1px 2px  0 #475376;
+ 
+
+}
+.foot .fonts dd{
+	font-size: 1.3em;
+	margin-bottom: .3em;
+}
+
+.fonts {
+	width:33%;
+	float:left;
+	height:100%;
+}
+
+.juge {
+	width:60%;
+	float:left;
+	font-size: 5em;
+	line-height: 1.3;
+}
+
+.pan {
+	min-height: 200px;
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+
+.p1 {
+	font-family: Lato;
+	font-size: 1.6em;
+}
+
+.p1 blockquote {
+width: 70%;
+margin: 0 auto;
+
+}
+
+.p2 {
+	background-color: #5CD7B2;
+	color: #5B5794;
+
+}
+.p2 h2 {
+	font-family: Lobster;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+.p2 .inner {
+	display:grid;
+
+}
+
+.p2 p {
+	-webkit-column-count:2;
+	-webkit-column-gap:130px;
+	font-family: Arvo;
+	font-size: 18px;
+	line-height: 1.3;
+}
+
+.comparate h2, .comparate h1{
+  padding:.2em 0;
+}    
+
+.fonts {
+
+min-height: 250px;
+overflow: auto;
+border:1px solid #aaa;
+}
+.fonts dt {
+  margin-bottom: 1em;
+}
+
+.fonts dd {
+  padding-top:.6em;
+  padding-bottom:.6em;
+  background-color:#eee;
+}
+
+
+
+.fonts dd:hover {
+  background-color:#ddd;
+}
+
+.fonts dd span {
+display: block;
+margin-top:-.6em;
+margin-bottom:-.6em;
+  padding-top:.6em;
+  padding-bottom:.6em;
+font-size:1.4em;
+}
+
+
+
+
+    
